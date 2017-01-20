@@ -1,11 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-
-
-<root>
-    
-</root>
+<adapt_framework>
+    <bundle>
+        <name>language_de_de</name>
+        <label>German (DE)</label>
+        <type>language</type>
+        <version>1.0.0</version>
+        <namespace>\adapt\language\de_de</namespace>
+        <version_status>release</version_status>
+        <availability>public</availability>
+        <description>Provides support for German (DE).</description>
+        <copyright>2017 Matt Bruton</copyright>
+        <license>MIT</license>
+        <vendor>
+            <name>Adapt Framework</name>
+            <website>http://www.adaptframework.com/documentaion/bundles/language_de_de</website>
+        </vendor>
+        <depends_on>
+            <bundle>
+                <name>adapt</name>
+                <version>2.0</version>
+            </bundle>
+            <bundle>
+                <name>language</name>
+                <version>1.0</version>
+            </bundle>
+        </depends_on>
+        <schema>
+            <add>
+                <table name="language">
+                    <record>
+                        <name>de_de</name>
+                        <language_code>de-DE</language_code>
+                        <label>Deutsch (DE)</label>
+                    </record>
+                </table>
+            </add>
+        </schema>
+        <settings>
+            <category name="Default language">
+                <setting>
+                    <name>language.default</name>
+                    <label>Default language</label>
+                    <default_value>de_de</default_value>
+                </setting>
+            </category>
+        </settings>
+    </bundle>
+</adapt_framework>
